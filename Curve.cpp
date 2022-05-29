@@ -136,9 +136,9 @@ public:
                 y = c3 + (c4 * t[i]);
                 Point p(x, y);
                 point[i] = p;
-                // Error here
+                // logical Error here
                 // In all cases X AND Y results are in double
-                // But when it gets stored in point it gets converted to int I DONT understand why
+                // But when it gets stored in point object it gets converted to int .
                 cout << " X" << i + 1 << " = " << x << endl;
                 cout << " Y" << i + 1 << " = " << y << endl;
             }
@@ -168,9 +168,6 @@ public:
                 y = c3 + (c4 * sin(t[i]));
                 Point p(x, y);
                 point[i] = p;
-                // Error here
-                // In all cases X AND Y results are in double
-                // But when it gets stored in point it gets converted to int I DONT understand why
 
                 cout << " X" << i + 1 << " = " << x << endl;
                 cout << " Y" << i + 1 << " = " << y << endl;
@@ -201,9 +198,6 @@ public:
                 y = c3 + (c4 * cos(t[i]));
                 Point p(x, y);
                 point[i] = p;
-                // Error here
-                // In all cases X AND Y results are in double
-                // But when it gets stored in point it gets converted to int I DONT understand why
                 cout << " X" << i + 1 << " = " << x << endl;
                 cout << " Y" << i + 1 << " = " << y << endl;
             }
@@ -233,9 +227,6 @@ public:
                 y = c3 + (c4 * cos(t[i]));
                 Point p(x, y);
                 point[i] = p;
-                // Error here
-                // In all cases X AND Y results are in double
-                // But when it gets stored in point it gets converted to int I DONT understand why
                 cout << " X" << i + 1 << " = " << x << endl;
                 cout << " Y" << i + 1 << " = " << y << endl;
             }
@@ -264,75 +255,6 @@ int main()
     return 0;
 }
 
-/*
-
-    void Calculate_X()
-    {
-        for (int i = 0; i < 50; i++)
-        {
-            t[i] = counter;
-            counter++;
-        }
-
-        cout << "Equation => x = c1  + c2 t " << endl;
-        cout << "Enter c1 : " << endl;
-        cin >> c1;
-        cout << "Enter c2 : " << endl;
-        cin >> c2;
-        cout << endl;
-        for (int i = 0; i < 50; i++)
-        {
-            x = c1 + (c2 * t[i]);
-            cout << " X" << i + 1 << " = " << x << endl;
-        }
-    }
-
-    void Calculate_Y()
-    {
-        for (int i = 0; i < 50; i++)
-        {
-            t[i] = counter;
-            counter++;
-        }
-
-        cout << "Equation => y = c3  + c4 t " << endl;
-        cout << "Enter c3 : " << endl;
-        cin >> c3;
-        cout << "Enter c4 : " << endl;
-        cin >> c4;
-        cout << endl;
-        for (int i = 0; i < 50; i++)
-        {
-            y = c1 + (c2 * t[i]);
-            cout << " Y" << i + 1 << " = " << x << endl;
-        }
-    }
 
 
-
-          cout << " ( x , y ) = "
-                 << " ( " << point[i].getX() << " , " << point[i].getY() << " ) " << endl;
-
-
-
-        cout << "Equation => x = c1  + c2 t " << endl;
-        cout << "Enter c1 : " << endl;
-        cin >> c1;
-        cout << "Enter c2 : " << endl;
-        cin >> c2;
-        cout << endl;
-        cout << "Equation => y = c3  + c4 t " << endl;
-        cout << "Enter c3 : " << endl;
-        cin >> c3;
-        cout << "Enter c4 : " << endl;
-        cin >> c4;
-        cout << endl;
-        for (int i = 0; i < 50; i++)
-        {
-
-            x = c1 + (c2 * t[i]);
-            y = c3 + (c4 * t[i]);
-            Point p(x, y);
-            point[i] = p;
-        }
-*/
+  
